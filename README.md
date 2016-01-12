@@ -3,9 +3,10 @@ Use GitHub's [fetch](https://github.com/github/fetch) library with Ruby on Rails
 
 ## Installation
 
-1. Ensure your `app/views/layouts/application.html.erb` file has `<%= csrf_meta_tags %>` within the `<head>` tag.
+0. Make sure you have the [fetch](https://github.com/github/fetch) library added to your `app.js` manifest file.
+1. Ensure your root layout file (usually called `app/views/layouts/application.html.erb`) has `<%= csrf_meta_tags %>` within the `<head>` tag.
 2. Copy the `fetch-rails.js` to your `/vendor/assets/javascripts/` folder.
-3. Add `//= require fetch-rails` directly below where you have added the fetch library
+3. Add `//= require fetch-rails` directly below where you have added the fetch library to your `app.js` manifest.
 
 ## Usage
 
@@ -71,7 +72,7 @@ Fetch.postJSON( '/api/web/post-json', { name: 'Adam', age: 30 } )
   });
 ```
 
-## Support Browsers
+## Support
 
 ### Rails
 * Rails 4.0+
