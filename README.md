@@ -21,7 +21,7 @@ Fetch.html( '/api/web/get-html' )
 ### JSON GET request
 
 ```javascript
-// endpoint returns { name: 'Adam', age: 31 }
+// endpoint returns { name: 'Adam', age: 30 }
 Fetch.json( '/api/web/get-json' )
   .then( function( data ){
     this.name = data.name;
@@ -71,7 +71,7 @@ Fetch.postJSON( '/api/web/post-json', { name: 'Adam', age: 30 } )
   });
 ```
 
-## SupportBrowsers
+## Support Browsers
 
 ### Rails
 * Rails 4.0+
