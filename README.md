@@ -38,7 +38,7 @@ Fetch.text( '/api/web/get-text' )
   });
 ```
 
-#### Form POST request
+### Form POST request
 
 ```javascript
 Fetch.post( '/api/web/submit-form', 'form.my-form' )
@@ -49,7 +49,7 @@ Fetch.post( '/api/web/submit-form', 'form.my-form' )
   });
 ```
 
-#### Form POST request w/ files
+#### With file uploads
 
 ```javascript
 Fetch.post( '/api/web/submit-form', 'form.my-form', 'input.file-uploader' )
